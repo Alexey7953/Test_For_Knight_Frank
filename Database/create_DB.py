@@ -19,6 +19,6 @@ with sqlite3.connect('Database.db') as connection:
         "flore     INTEGER NOT NULL,"
         "square     INTEGER NOT NULL,"
         "type_object        TEXT NOT NULL,"
-        "station_metro        TEXT NOT NULL REFERENCES metro(id)"
+        "station_metro        TEXT NOT NULL REFERENCES metro(station_name)"
         ");"
     )
